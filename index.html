@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather · real‑time API demo</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script async src="script.js"></script>
+  </head>
+  <body>
+    <div class="card">
+      <h1><span>⛅</span> weather now</h1>
+
+      <!-- Task 1: input field, search button, empty result div -->
+      <div class="search-area">
+        <label for="cityInput" class="sr-only">Enter city name</label>
+        <input
+          type="text"
+          id="cityInput"
+          placeholder="e.g. London, Tokyo"
+          autocomplete="off"
+        />
+        <button id="searchBtn">🔍 Search weather</button>
+      </div>
+
+      <!-- result div (initially empty, later filled by JS) -->
+      <div id="resultDiv" class="result-card">
+        <!-- empty by design: Task 1 -->
+      </div>
+      <div class="helper-note">⏎ Enter works · last city saved</div>
+    </div>
+  </body>
+</html>
